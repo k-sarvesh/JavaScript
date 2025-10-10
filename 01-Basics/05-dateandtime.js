@@ -1,0 +1,10 @@
+let mydate = new Date()
+console.log(mydate)
+console.log(mydate.toString())
+console.log(mydate.toDateString())
+console.log(mydate.toTimeString())
+console.log(mydate.toISOString())
+console.log(mydate.getTime())
+
+let mydate1 = new Date(2020,0,3)
+console.log(mydate1.toDateString())
