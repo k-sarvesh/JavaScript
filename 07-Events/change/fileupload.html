@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0 ;
+            font-family: Gilroy, sans-serif;
+            box-sizing: border-box;
+        }
+        html, 
+        body{
+           width: 100%;
+              height: 100%;
+               background-color: #2a2b2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        input{
+            display: none;
+        }
+        .btn{
+            padding: 10px 15px;
+            background-color: #49a549;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 10px;           
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: #3e8e3e;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <input type="file" id="fileinp">
+        <div class="btn">
+            Upload File
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('.btn');
+        const fileinp = document.getElementById('fileinp');
+
+        btn.addEventListener('click', (temp)=>{
+            fileinp.click();
+        });
+        fileinp.addEventListener('change', (dets)=>{
+            console.log(dets.target.value);
+            if(dets.target.value){
+                btn.innerText = dets.target.value;
+            }
+        })
+
+    </script>
+</body>
+</html>

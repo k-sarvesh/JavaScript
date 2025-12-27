@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            background-color: #454544;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        form{
+            border: 2px solid rgb(122, 111, 111);
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #454544
+
+        }
+        input{
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px;
+            width: 250px;
+        }
+        input ,select{
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .submit{
+            background-color: rgb(56, 143, 56);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .nameError, .emailError, .passError {
+            color: #c9c6c6;
+            display: none;
+            font-size: 12px;
+        }
+        .success{
+            color: #c9c6c6;
+            display: none;
+            margin-left: 24px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Name">
+        <div class="nameError">
+            <br>
+            <small>Please enter a valid name (at least 3 characters).</small>
+            
+        </div>
+        <br><br>
+        <input type="email" placeholder="Email">
+        <div class="emailError">
+            <br>
+            <small>Please enter a valid email address.
+            </small>
+        </div>
+        <br><br>
+        <input type="password" placeholder="Password">
+        <div class="passError">
+            <br>
+            <small>Password must be at least 6 characters long.</small>
+            
+        </div>
+        <br><br>
+        <select name="" id="">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <input class="submit" type="submit" value="Submit">
+        <br><br>
+        <div class="success">
+            <small>The form is successfully submitted.</small>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
