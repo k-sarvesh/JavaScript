@@ -1,7 +1,7 @@
 # Projects related to DOM
 
 ## Project Link
-[click here]
+
 
 # Solution code
 ## project 1: Background Color Changer
