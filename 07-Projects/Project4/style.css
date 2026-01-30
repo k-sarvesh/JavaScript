@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212121;
+    max-width: 750px;
+    min-width: 480px;
+    width: 300px;
+    margin: 0 auto;
+}
+#wrapper{
+    text-align: center;
+    width: 450px;
+    height: 550px;
+    background-color: #474747;
+    color: #fff;
+    font-size: 25px;
+
+}
+h1{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.lastResult{
+    color: white;
+    padding: 7px;
+
+}
+.guesses{
+    color: white;
+    padding: 7px;
+}
+button{
+    
+}
