@@ -30,7 +30,7 @@ async function checkWeather(city) {
             document.querySelector(".weather-img").src = "images/clouds.png";
         }
         else if(data.weather[0].main === "Clear") {
-            document.querySelector(".weather-img").src = "images/clear.png";
+            document.querySelector(".weather-img").src = "images/sun.png";
         }
         else if(data.weather[0].main === "Rain") {
             document.querySelector(".weather-img").src = "images/rainy.png";
